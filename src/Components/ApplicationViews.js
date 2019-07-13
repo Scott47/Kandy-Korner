@@ -20,14 +20,14 @@ export default class ApplicationViews extends Component {
     ]
     candyTypes = [
         {id: 1, name: "Bad"},
-        {id: 1, name: "Worse"},
-        {id: 1, name: "Worser"}
+        {id: 2, name: "Worse"},
+        {id: 3, name: "Worser"}
     ]
     candies = [
-        {id: 1, name: "Nasty Nuggets"},
-        {id: 2, name: "Gooey Goobers"},
-        {id: 3, name: "Sucky Suckers"},
-        {id: 4, name: "Looks like Chocolate"}
+        {id: 1, candyTypeId: 1, name: "Nasty Nuggets"},
+        {id: 2, candyTypeId: 1, name: "Gooey Goobers"},
+        {id: 3, candyTypeId: 2, name: "Sucky Suckers"},
+        {id: 4, candyTypeId: 1, name: "Looks like Chocolate"}
     ]
 
 state = {
@@ -36,15 +36,7 @@ state = {
     candyTypes: this.candyTypes,
     candies: this.candies
 }
-// render() {
-//     return (
-//         <article className="kandy">
-//             <StoreList stores={this.state.stores} />
-//             <EmployeeList employees={this.state.employees} />
-//             <CandyList candies={this.state.candies} />
-//         </article>
-//     )
-// }
+
 render() {
     return (
         <React.Fragment>
@@ -52,11 +44,12 @@ render() {
                 return <StoreList stores={this.state.stores} />
             }} />
             <Route path="/Candy" render={(props) => {
-                return <CandyList candies={this.state.candies} />
+                return <CandyList candies={this.state.candies} candyTypes={this.state.candyTypes} />
             }} />
             <Route path="/Employees" render={(props) => {
                 return <EmployeeList employees={this.state.employees} />
             }} />
+
         </React.Fragment>
     )
 }

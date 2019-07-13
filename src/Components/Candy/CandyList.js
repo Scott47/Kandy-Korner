@@ -7,7 +7,14 @@ export default class CandyList extends Component {
       {
         this.props.candies.map(candy =>
             <div key={candy.id}>
-                {candy.name}
+                <p> {candy.name}  are the
+                {
+                  this.props.candyTypes
+                  .find(candyType => candyType.id === candy.candyTypeId)
+                  .name
+                }
+                type
+                </p>
             </div>
         )
       }
