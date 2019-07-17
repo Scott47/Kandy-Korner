@@ -17,7 +17,7 @@ export default class CandyList extends Component {
                 </p>
             </div>
         )
-      }
+      } 
       </section>
     )
   }
