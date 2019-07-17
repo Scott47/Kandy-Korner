@@ -1,9 +1,9 @@
 {
-"stores": [
-    {"id": 1, "name": "Kandy Jones"},
-    {"id": 2, "name": "Sugar High" },
-    {"id": 3, "name": "Cavity Factory"},
-    {"id": 4, "name": "Tonge Coaters"}
+    "stores": [
+        {"id": 1, "name": "Kandy Jones"},
+        {"id": 2, "name": "Sugar High" },
+        {"id": 3, "name": "Cavity Factory"},
+        {"id": 4, "name": "Tonge Coaters"}
     ],
     "employees": [
         {"id": 1, "name": "Toothless Tommy"},

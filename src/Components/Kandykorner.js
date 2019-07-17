@@ -4,10 +4,6 @@ import NavBar from "../nav/NavBar"
 
 export default class Kandykorner extends Component {
 
-
-
-
-
     render() {
         return (
             <React.Fragment>
