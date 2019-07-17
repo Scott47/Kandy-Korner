@@ -30,12 +30,13 @@ export default class ApplicationViews extends Component {
         {id: 4, candyTypeId: 1, name: "Looks like Chocolate"}
     ]
 
-state = {
-    stores: this.stores,
-    employees: this.employees,
-    candyTypes: this.candyTypes,
-    candies: this.candies
-}
+
+    state = {
+        locations: [],
+        animals: [],
+        employees: []
+    }
+
 
 render() {
     return (
