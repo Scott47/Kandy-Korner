@@ -17,6 +17,9 @@ class NavBar extends Component {
                     <li className="nav-item">
                         <Link className="nav-link" to="/Candy">Candy</Link>
                     </li>
+                    {/* <li className="nav-item">
+                    <input type="text" placeholder="Search" className="search form-control" onKeyPress={this.props.inputEvent} ></input>
+                    </li> */}
                 </ul>
             </nav>
         )
