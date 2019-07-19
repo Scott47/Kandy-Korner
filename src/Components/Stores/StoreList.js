@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 export default class StoreList extends Component {
   render() {
-      console.log(this.props)
+
     return (
       <section className="stores">
       {
