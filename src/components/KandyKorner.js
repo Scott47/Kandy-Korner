@@ -1,10 +1,15 @@
 import React from "react";
 import '../App.css';
 import { ApplicationViews } from './ApplicationViews';
+import { NavBar } from './nav/NavBar'
 
 const KandyKorner = () => {
     return (
-        <ApplicationViews />
+        <>
+            <NavBar />
+            <ApplicationViews />
+        </>
+
     )
 }
 export default KandyKorner
