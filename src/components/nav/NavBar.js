@@ -1,9 +1,13 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import "./NavBar.css"
-
+import '../../KandyKornerLogo.png'
 export const NavBar = (props) => {
     return (
+        <>
+        <div>
+            <img src="../../KandyKornerLogo.png" className="KandyKorner-logo" alt="logo" />
+        </div>
         <ul className="navbar">
             <li className="navbar__item active">
                 <Link className="navbar__link" to="/">Home</Link>
@@ -21,5 +25,6 @@ export const NavBar = (props) => {
                 <Link className="navbar__link" to="/employees">Employees</Link>
             </li>
         </ul>
+        </>
     )
 }
