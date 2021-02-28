@@ -1,8 +1,8 @@
 import React, { useContext, useEffect } from "react"
 import { LocationContext } from "./LocationsProvider"
 import { Location } from "./Location"
-import { Link } from "react-router-dom"
-// import "./Location.css"
+// import { Link } from "react-router-dom"
+import "./Location.css"
 
 export const LocationList = () => {
     const { locations, getLocations } = useContext(LocationContext)
@@ -14,10 +14,8 @@ export const LocationList = () => {
             {
                 locations.map(location => {
                     return <Location key={location.id} location={location} />
-                       
                 })
             }
         </div >
     )
-
 }
